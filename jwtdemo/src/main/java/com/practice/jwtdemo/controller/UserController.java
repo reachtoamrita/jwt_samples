@@ -30,7 +30,7 @@ public class UserController {
     private String getJwtToken(String username) {
         String SecretKey = "mySecretKey";
         List<GrantedAuthority> grantedAuthorities = AuthorityUtils
-                .commaSeparatedStringToAuthorityList("ROLE_UER");
+                .commaSeparatedStringToAuthorityList("ROLE_USER");
         String token = Jwts
                         .builder()
                         .setId("amritajwt")
